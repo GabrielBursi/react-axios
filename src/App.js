@@ -1,15 +1,12 @@
-import { Link } from "react-router-dom";
-
+import Header from "./components/Header";
 import RoutesApp from "./Routes";
+
+import './App.css'
 
 function App() {
   return (
     <>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/new-post">New post</Link>
-        <Link to="/manage">Manage</Link>
-      </nav>
+      <Header/>
       <RoutesApp/>
     </>
   );
