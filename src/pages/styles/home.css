@@ -1,0 +1,33 @@
+main{
+    max-width: 1400px;
+    max-height: auto;
+    min-height: 60vh;
+    margin: 2rem auto;
+    padding: 1rem;
+    color: #fff;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.post{
+    min-height: 7rem;
+    max-height: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+}
+.post h3::first-letter{
+    text-transform: uppercase;
+}
+.btn{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fffff9;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+}

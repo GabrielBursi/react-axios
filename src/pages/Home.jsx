@@ -3,6 +3,8 @@ import React, { useState,useEffect } from 'react';
 import axios from 'axios'
 import { Link } from 'react-router-dom';
 
+import './styles/home.css'
+
 function HomePage() {
 
     const [posts, setPosts] = useState([]);
@@ -22,15 +24,16 @@ function HomePage() {
     }, []);
 
     return (
-        <>
+        <main>
+        <h2>Últimos posts</h2>
             {posts.length === 0 ? (<p>Carregando...</p>) : (posts.map(post => (
                 <div className='post' key={post.id}>
-                    <h2>{post.title}</h2>
+                    <h3>{post.title}</h3>
                     <p>{post.body}</p>
                     <Link to={`/posts/${post.id}`} className='btn'>Read more</Link>
                 </div>
             )))}
-        </>
+        </main>
     );
 }
 
