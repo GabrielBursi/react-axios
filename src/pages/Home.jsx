@@ -11,7 +11,7 @@ function HomePage() {
 
     async function getPosts(){
         try {
-            const res = await blogFetch.get('https://jsonplaceholder.typicode.com/posts')
+            const res = await blogFetch.get('/posts')
             const data = res.data
             setPosts(data);
         } catch (error) {
